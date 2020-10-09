@@ -7,12 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="pokazTekst()">Pokaż tekst</button>
     <p id="wynik"></p>
     <script>
         console.log("witaj świecie");
         document.write("witaj świecie przez document.write");
         document.getElementById('wynik').innerHTML = "zapisujemy do p z poziomu JS";
         window.alert("to jest ostrzeżenie");    
+
+        function pokazTekst(){
+            document.getElementById("wynik").innerHTML = "zapisujemy do p z poziomu JS";
+        }
     </script>
     
 </body>
